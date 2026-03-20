@@ -1,5 +1,4 @@
-
-// création et exportation de mon interface vers le app.ts 
+// création et exportation de l'interface pour etre utilisé dans le composant principale
 export interface Diamond {
     _id: string;
     name : string;

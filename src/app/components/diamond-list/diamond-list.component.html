@@ -1,0 +1,9 @@
+<!-- Création d'un zone d'affichage pour les cartes de diamants -->
+<div class="cards-container">
+
+    <!-- Création d'une itération sur le tableau de diamant afin de générer une carte par diamant -->
+    @for (diamond of diamonds() ; track diamond._id){
+        <app-diamond-card [diamond]="diamond"/>
+    }
+
+</div>

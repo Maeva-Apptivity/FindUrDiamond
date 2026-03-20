@@ -1,14 +1,16 @@
-// Variables pour personnaliser rapidement le thème
+// Variable de thème
 $card-bg: #ffffff;
-$primary-color: #e91e63; // Une touche de rouge pour le Rubis
+$primary-color: #e91e63; 
 $text-main: #333;
 $text-label: #757575;
 $border-radius: 12px;
 $shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 
+ /* Carte des diamants  */
 .diamond-card {
   background-color: $card-bg;
   border-radius: $border-radius;
+  flex-direction: column;
   box-shadow: $shadow;
   padding: 20px;
   max-width: 300px;
@@ -22,7 +24,7 @@ $shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transform: translateY(-5px);
   }
 
-  // Styles communs pour les lignes de détails
+  /* Styles communs pour les lignes de détails des diamants*/
   .details-row, & > div:last-child {
     display: flex;
     justify-content: space-between;
@@ -35,6 +37,7 @@ $shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     }
   }
 
+  /* Label des informations des cartes */
   .label {
     color: $text-label;
     font-size: 0.9rem;
@@ -42,19 +45,20 @@ $shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     text-transform: uppercase;
   }
 
-  // Styles spécifiques aux valeurs
+  /* Noms  des  diamants */
   .diamond-name {
     color: $primary-color;
     font-weight: bold;
     font-size: 1.2rem;
   }
 
+  /* Echelle de Mohs des diamants */
   .diamond-scale, .diamond-value {
     color: $text-main;
     font-weight: 500;
   }
 
-  // Conteneur de l'image
+  /* Conteneur de l'image des diamants */
   .diamond-image {
     width: 100%;
     height: 200px;
@@ -65,6 +69,7 @@ $shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     align-items: center;
     justify-content: center;
 
+    /* Format des images des diamants*/
     img {
       max-width: 100%;
       height: auto;
