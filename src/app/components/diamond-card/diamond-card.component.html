@@ -1,0 +1,20 @@
+<!-- création d'une const pour stocker mon signal pour éviter les répétitions -->
+@let diams = diamond();
+<!-- Création de ma carte avec les informations dynamique -->
+<div class="diamond-card">
+    <div class="details-row">
+        <div class="label"> Name :</div>
+        <div class="diamond-name">{{diams.name}}</div>
+    </div>
+    <div class="diamond-image">
+        <img [src]="diams.image" alt="Rubis" >
+    </div>
+    <div class="details-row">
+        <div class="label">Mohs scale : </div>
+        <div class="diamond-scale">{{diams.scale}}</div>
+    </div>
+    <div>
+        <div class="label">Price per carat :</div>
+        <div class="diamond-value">{{diams.price}}</div>
+    </div>
+</div>
