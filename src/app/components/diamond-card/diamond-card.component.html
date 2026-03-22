@@ -1,19 +1,25 @@
 @let diams = diamond(); <!-- Création d'une constante contenant les données du signal pour evité les appels répétés -->
 
-<div class="diamond-card"> <!-- Création d'une carte regroupant les information du diamants de façon dynamique -->
+<!-- Création d'une carte regroupant les informations du diamants de façon dynamique -->
+<div class="diamond-card" (click)="showDetails()">  <!-- Déclenche la methode showdetails au clic de l'event binding(click)-->
+
     <div class="details-row">
         <div class="label"> Name :</div>
         <div class="diamond-name">{{diams.name}}</div> <!-- Noms des diamants  -->
     </div>
+
     <div class="diamond-image">
         <img [src]="diams.image" [alt]="diams.name" > <!-- Images des diamants  -->
     </div>
+
     <div class="details-row">
         <div class="label">Mohs scale : </div> 
         <div class="diamond-scale">{{diams.scale}}</div> <!-- Echelle de Mohs des diamants -->
     </div>
+
     <div class="details-row">
         <div class="label">Price per carat :</div> 
         <div class="diamond-value">{{diams.price}}</div> <!-- Prix au carat des diamants -->
     </div>
+
 </div>
