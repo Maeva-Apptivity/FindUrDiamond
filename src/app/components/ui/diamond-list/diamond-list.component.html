@@ -3,8 +3,11 @@
 
     <!-- Création d'une itération sur le tableau de diamant afin de générer une carte par diamant -->
     @for (diamond of diamonds() ; track diamond._id){
-            <!-- appel de la carte avec les données entrante (input) et evenement sortant (output)-->
-        <app-diamond-card [diamond]="diamond" (cardClick)="receiptShowDetails($event)"/> 
+        <!-- appel de la carte avec les données entrante (input) et evenement sortant (output)-->
+        <app-diamond-card
+            [diamond]="diamond" 
+            (cardClick)="receiptShowDetails($event)">
+        </app-diamond-card>
     }
 
 </div>

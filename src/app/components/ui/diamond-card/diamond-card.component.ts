@@ -1,5 +1,7 @@
 import { Component, input, output} from '@angular/core';
-import { Diamond } from '../../models/diamond.models';
+import { Diamond } from '../../../models/diamond.models';
+
+
 @Component({
   selector: 'app-diamond-card',
   imports: [],

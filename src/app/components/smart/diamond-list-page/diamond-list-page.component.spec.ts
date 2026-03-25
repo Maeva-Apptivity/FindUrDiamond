@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DiamondDetailsComponent } from './diamond-details.component';
+import { DiamondListPageComponent } from './diamond-list-page.component';
 
-describe('DiamondDetailsComponent', () => {
-  let component: DiamondDetailsComponent;
-  let fixture: ComponentFixture<DiamondDetailsComponent>;
+describe('DiamondListPageComponent', () => {
+  let component: DiamondListPageComponent;
+  let fixture: ComponentFixture<DiamondListPageComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [DiamondDetailsComponent]
+      imports: [DiamondListPageComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(DiamondDetailsComponent);
+    fixture = TestBed.createComponent(DiamondListPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
