@@ -1,20 +1,12 @@
-// Variable de thème
-$card-bg: #ffffff;
-$primary-color: #e91e63; 
-$text-main: #333;
-$text-label: #757575;
-$border-radius: 12px;
-$shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-
- /* Carte des diamants  */
+/* Carte des diamants adaptée au thème global */
 .diamond-card {
-  background-color: $card-bg;
-  border-radius: $border-radius;
-  flex-direction: column;
-  box-shadow: $shadow;
+  background-color: var(--card-bg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
   padding: 20px;
   max-width: 300px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* On utilise la police globale ou celle du thème */
+  font-family: var(--font-family);
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -24,7 +16,7 @@ $shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transform: translateY(-5px);
   }
 
-  /* Styles communs pour les lignes de détails des diamants*/
+  /* Styles communs pour les lignes de détails des diamants */
   .details-row, & > div:last-child {
     display: flex;
     justify-content: space-between;
@@ -39,22 +31,22 @@ $shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 
   /* Label des informations des cartes */
   .label {
-    color: $text-label;
+    color: var(--text-label);
     font-size: 0.9rem;
     font-weight: 600;
     text-transform: uppercase;
   }
 
-  /* Noms  des  diamants */
+  /* Noms des diamants */
   .diamond-name {
-    color: $primary-color;
+    color: var(--primary-color);
     font-weight: bold;
     font-size: 1.2rem;
   }
 
-  /* Echelle de Mohs des diamants */
+  /* Echelle de Mohs et valeurs */
   .diamond-scale, .diamond-value {
-    color: $text-main;
+    color: var(--text-main);
     font-weight: 500;
   }
 
@@ -63,13 +55,14 @@ $shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     width: 100%;
     height: 200px;
     background-color: #f9f9f9;
-    border-radius: calc($border-radius - 4px);
+    /* Utilisation de calc avec var() pour garder la cohérence du radius */
+    border-radius: calc(var(--border-radius) - 4px);
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
 
-    /* Format des images des diamants*/
+    /* Format des images */
     img {
       max-width: 100%;
       height: auto;

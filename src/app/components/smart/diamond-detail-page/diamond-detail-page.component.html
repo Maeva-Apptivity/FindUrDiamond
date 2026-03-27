@@ -1,0 +1,22 @@
+<!-- utilisation du let pour évité la répétition de l'appel du signal -->
+@let diams = diamond();
+
+@if (diams) {
+    <div class="details-container"> <!-- contenant de la page  -->
+
+        <div class="image-section"><!-- section dédiée à l'image du diamant récupéré -->
+            <img [src]="diams?.image" alt="diams?.name">
+        </div>
+
+        <div class="info-section"> <!-- section dédiée aux information du diamant récupéré -->
+            <h1 class="diamond-name">{{diams?.name}}</h1>
+            <p class="diamond-scale">{{diams?.scale}}</p>
+            <p class="diamond-price"> {{diams?.price}}</p>
+            <button class="btn-back" (click)="goBack()"> Go back </button>
+        </div>
+
+    </div>
+
+}@else {
+    <p class="error-message">Diamond not found...</p>
+}
