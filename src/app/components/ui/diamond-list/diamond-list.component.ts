@@ -1,4 +1,4 @@
-import { Component, inject, input } from '@angular/core';
+import { Component, inject, input, signal } from '@angular/core';
 import { Router } from '@angular/router';
 import { DiamondCardComponent } from '../diamond-card/diamond-card.component';
 import { Diamond } from '../../../models/diamond.models';

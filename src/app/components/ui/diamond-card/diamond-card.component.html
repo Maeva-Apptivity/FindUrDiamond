@@ -14,12 +14,12 @@
 
     <div class="details-row">
         <div class="label">Mohs scale : </div> 
-        <div class="diamond-scale">{{diams.scale}}</div> <!-- Echelle de Mohs des diamants -->
+        <div class="diamond-scale">{{diams.mohsValue}}</div> <!-- Echelle de Mohs des diamants -->
     </div>
 
     <div class="details-row">
         <div class="label">Price per carat :</div> 
-        <div class="diamond-value">{{diams.price}}</div> <!-- Prix au carat des diamants -->
+        <div class="diamond-value">{{diams.priceMin | currency :'USD':'symbol':'1.0-0' }}</div> <!-- Prix au carat des diamants -->
     </div>
 
 </div>

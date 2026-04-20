@@ -1,9 +1,10 @@
 import { Component, computed, inject, input } from '@angular/core';
 import { DiamondService } from '../../../services/diamond.service';
+import { CurrencyPipe } from '@angular/common';
 
 @Component({
   selector: 'app-diamond-detail-page',
-  imports: [],
+  imports: [CurrencyPipe],
   templateUrl: './diamond-detail-page.component.html',
   styleUrl: './diamond-detail-page.component.scss'
 })

@@ -3,6 +3,8 @@ export interface Diamond {
     _id: string;
     name : string;
     image : string;
-    scale : string;
-    price : string;
+    description: string;
+    mohsValue: number; 
+    priceMin: number;
+    priceMax: number;
 }
