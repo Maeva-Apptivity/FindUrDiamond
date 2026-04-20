@@ -10,8 +10,11 @@
 
         <div class="info-section"> <!-- section dédiée aux information du diamant récupéré -->
             <h1 class="diamond-name">{{diams?.name}}</h1>
-            <p class="diamond-scale">{{diams?.scale}}</p>
-            <p class="diamond-price"> {{diams?.price}}</p>
+            <p class="diamond-description">{{diams?.description}}</p>
+            <p class="diamond-scale">{{diams?.mohsValue}}</p>
+            <p class="diamond-price"> 
+                {{diams?.priceMin| currency: 'USD': 'symbol': '1.0-0'}} - {{diams?.priceMax | currency : 'USD': 'symbol': '1.0-0'}}
+            </p>
             <button class="btn-back" (click)="goBack()"> Go back </button>
         </div>
 

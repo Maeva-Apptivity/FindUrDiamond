@@ -1,10 +1,10 @@
 import { Component, input, output} from '@angular/core';
 import { Diamond } from '../../../models/diamond.models';
-
+import { CurrencyPipe } from '@angular/common';
 
 @Component({
   selector: 'app-diamond-card',
-  imports: [],
+  imports: [CurrencyPipe],
   templateUrl: './diamond-card.component.html',
   styleUrl: './diamond-card.component.scss'
 })
